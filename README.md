@@ -2,10 +2,11 @@ Novel to EPUB
 Packs novels on RoyalRoad (https://www.royalroad.com/home) into the EPUB file format for offline reading on mobile devices.
 
 What is RoyalRoad?
+
 RoyalRoad is a platform where novice and experienced authors alike self-publish novels. The site garners over 15 millions views per month, and some authors go on to officially publish their works.  
 
 HOW TO USE: 
-Make sure you have the falling dependencies installed using pip:
+Make sure you have the following dependencies installed:
 1) BeautifulSoup (pip install beautifulsoup4)
 2) ebooklib (pip install EbookLib)
 3) validators (pip install validators)
