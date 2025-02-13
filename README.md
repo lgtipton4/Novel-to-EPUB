@@ -14,6 +14,7 @@ Open the noveltoepub.py file and follow on screen instructions (enter novel name
 The compiled EPUB file will be outputted in the same directory.
 
 For use on iPhones, copy the file over to your phone and click "Send to Books" to read in the Books app or download an EPUB reader of your choice from the AppStore.
+
 For use on Windows, use an online epub reader like Flow (https://www.flowoss.com/) or read on Calibre. 
 
 
