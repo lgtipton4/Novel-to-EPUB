@@ -1,5 +1,5 @@
 Novel to EPUB
-Packs novels on RoyalRoad (https://www.royalroad.com/home) into EPUB file for offline reading on mobile devices.
+Packs novels on RoyalRoad (https://www.royalroad.com/home) into the EPUB file format for offline reading on mobile devices.
 
 What is RoyalRoad?
 RoyalRoad is a platform where novice and experienced authors alike self-publish novels. The site garners over 15 millions views per month, and some authors go on to officially publish their works.  
