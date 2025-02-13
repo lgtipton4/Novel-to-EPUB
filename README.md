@@ -1,5 +1,5 @@
 Novel to EPUB
-Packs novels on RoyalRoad (https://www.royalroad.com/home) into EPUB file for use on mobile devices.
+Packs novels on RoyalRoad (https://www.royalroad.com/home) into EPUB file for offline reading on mobile devices.
 
 Note: for use with Kindle, download Calibre and convert to MOBI. You can send the converted to your Kindle with Calibre as well.
 
