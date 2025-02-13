@@ -15,10 +15,10 @@ Open the noveltoepub.py file and follow on screen instructions (enter novel name
 
 The compiled EPUB file will be outputted in the same directory.
 
-For use on Kindle, download Calibre (https://calibre-ebook.com/download) on Windows and convert the output EPUB file to MOBI. You can send the converted MOBI file to your Kindle with Calibre.
+For reading on Kindle, download Calibre (https://calibre-ebook.com/download) on Windows and convert the output EPUB file to MOBI. You can send the converted MOBI file to your Kindle with Calibre.
 
-For use on iPhones, copy the file over to your phone, locate the EPUB in the "Files" app, and click "Send to Books" to read in the Books app. You can also download an EPUB reader from the AppStore as an alternative to the Books app.
+For EPUB reading on iPhones, copy the EPUB file over to your phone, locate the EPUB in the "Files" app, and click "Send to Books" to read in the Books app. You can also download an EPUB reader from the AppStore as an alternative to the Books app.
 
-For use on Windows, use an online epub reader like Flow (https://www.flowoss.com/) or read on Calibre. 
+For EPUB reading on Windows, use an online epub reader like Flow (https://www.flowoss.com/) or read on Calibre. 
 
 
