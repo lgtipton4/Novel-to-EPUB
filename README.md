@@ -1,7 +1,8 @@
 Novel to EPUB
 Packs novels on RoyalRoad (https://www.royalroad.com/home) into EPUB file for offline reading on mobile devices.
 
-Note: for use with Kindle, download Calibre and convert to MOBI. You can send the converted to your Kindle with Calibre as well.
+What is RoyalRoad?
+RoyalRoad is a platform where novice and experienced authors alike self-publish novels. The site garners over 15 millions views per month, and some authors go on to officially publish their works.  
 
 HOW TO USE: 
 Make sure you have the falling dependencies installed using pip:
@@ -13,7 +14,9 @@ Open the noveltoepub.py file and follow on screen instructions (enter novel name
 
 The compiled EPUB file will be outputted in the same directory.
 
-For use on iPhones, copy the file over to your phone and click "Send to Books" to read in the Books app or download an EPUB reader of your choice from the AppStore.
+For use on Kindle, download Calibre (https://calibre-ebook.com/download) on Windows and convert the output EPUB file to MOBI. You can send the converted MOBI file to your Kindle with Calibre.
+
+For use on iPhones, copy the file over to your phone, locate the EPUB in the "Files" app, and click "Send to Books" to read in the Books app. You can also download an EPUB reader from the AppStore as an alternative to the Books app.
 
 For use on Windows, use an online epub reader like Flow (https://www.flowoss.com/) or read on Calibre. 
 
