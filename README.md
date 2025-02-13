@@ -3,7 +3,7 @@ Packs novels on RoyalRoad into EPUB file for use on mobile devices.
 
 Note: for use with Kindle, download Calibre and convert to MOBI. 
 
-HOW TO USE
+HOW TO USE: 
 Make sure you have the falling dependencies installed using pip:
 1) BeautifulSoup
 2) ebooklib
