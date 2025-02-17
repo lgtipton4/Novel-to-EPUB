@@ -53,26 +53,26 @@ def fetch_description(soup, url):
     return description
     
 def fetch_chapter_list(soup):
-    # return list of chapters and their urls as dictionary 
-    chapters_dictionary = []
+    # return list of chapters and their urls as a list of dictionaries 
+    chapter_urls = []
     chapter_classes = soup.find_all('tr', class_='chapter-row')
     for chapter_class in chapter_classes:
         chapter = chapter_class.find('a')
         chapter_link = f'{main_url}{chapter.get('href')}'
-        chapters_dictionary.append({'title': chapter.text.strip(), 'url': chapter_link})
+        chapter_urls.append({'title': chapter.text.strip(), 'url': chapter_link})
 
-    return chapters_dictionary
+    return chapter_urls
 
-def fetch_chapters(chapter_list):
+def fetch_chapters(chapter_urls):
     # return chapter title and text data in a dictionary  
-    chapters = []
-    for chapter in chapter_list:
+    chapter_text = []
+    for chapter in chapter_urls:
         print(f'Downloading {chapter['title']}')
         soup = make_request(chapter['url'])
         p_tags = soup.find_all('p')
-        chapters.append({'title': chapter['title'], 'p_tags': p_tags})
+        chapter_text.append({'title': chapter['title'], 'p_tags': p_tags})
 
-    return chapters
+    return chapter_text
 
 def fetch_cover_image(soup):
     # return cover image
@@ -145,9 +145,15 @@ def main():
             print('Try re-entering the title in a more complete manner. (ex. mother -> mother of learning) or entering the url directly.')
             return 0
     
-    # Get soup for functions.
+    # Get novel data for pack_epub function.
     soup = make_request(book_url)
-    pack_epub(fetch_chapters(fetch_chapter_list(soup)), fetch_author(soup), fetch_cover_image(soup), fetch_description(soup, book_url), fetch_tags(soup), fetch_title(soup))
+    chapters = fetch_chapters(fetch_chapter_list(soup))
+    author = fetch_author(soup)
+    cover_image = fetch_cover_image(soup)
+    description = fetch_description(soup, book_url)
+    tags = fetch_tags(soup)
+    title = fetch_title(soup)
+    pack_epub(chapters, author, cover_image, description, tags, title)
 
 
 if __name__ == '__main__':
