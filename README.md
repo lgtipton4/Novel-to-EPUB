@@ -28,7 +28,11 @@ Use an online epub reader like Flow (https://www.flowoss.com/) or read on Calibr
 
 **For reading on Kindle:**
 
-Use the built in email function to send the packed EPUB file to your Kindle. This does require some initial set-up, however. Follow this article (https://developers.google.com/gmail/api/quickstart/python) until the "Configure the Sample" stage. Add your email as a user by going to APIs & Services -> OAuth consent screen -> Audience -> Add test user. Open novel2epub and grant access to the program. Ideally, the next release will not require these steps. 
+Use the built in email function to send the packed EPUB file to your Kindle. This does require some initial set-up, however. Follow this article (https://developers.google.com/gmail/api/quickstart/python) until the "Configure the Sample" stage. Add your email as a user by going to APIs & Services -> OAuth consent screen -> Audience -> Add test user. Open novel2epub and grant access to the program. 
+
+Enable Amazon Send to Kindle (https://www.amazon.com/gp/sendtokindle/). 
+
+Ideally, the next release will not require these steps. 
 
 OR
 
