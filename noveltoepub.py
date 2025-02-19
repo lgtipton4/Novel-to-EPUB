@@ -168,9 +168,10 @@ def main():
         # Calls send_email function to compose and send an email to the user's Kindle. 
         email_function.send_email(kindle_email, f'{book_title}.epub')
         print("Please wait up to 10 minutes for the book to appear on your Kindle.")
-
+        return
+    
     else:
-        exit
+        return
 
 if __name__ == '__main__':
     main()
