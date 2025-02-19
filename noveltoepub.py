@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 import time
 from ebooklib import epub
 import validators
+import email_function
+
 
 main_url = 'https://www.royalroad.com'
 
@@ -26,6 +28,7 @@ def search(soup):
     return title.text, f'{main_url}{link.get('href')}' 
         
 def fetch_title(soup):
+    # Returns novel title
     title_class = soup.find('h1', class_='font-white')
     title = title_class.text
     return title
@@ -154,7 +157,20 @@ def main():
     tags = fetch_tags(soup)
     title = fetch_title(soup)
     pack_epub(chapters, author, cover_image, description, tags, title)
+    user_input = input("EPUB file downloaded successfully. Would you like to send the file to a Kindle? (Y/N): ")
+    if(user_input == "Y" or user_input == "y"):
+        with open("emails.cfg", 'r+') as f:
+            kindle_email = f.read()
+            if(kindle_email == ""):
+                new_email = input("No kindle email found on record. Please enter one here: ")
+                f.write(new_email)
+                kindle_email = new_email
 
+        email_function.send_email(kindle_email, f'{book_title}.epub')
+        print("Please wait up to 10 minutes for the book to appear on your Kindle.")
+
+    else:
+        exit
 
 if __name__ == '__main__':
     main()
