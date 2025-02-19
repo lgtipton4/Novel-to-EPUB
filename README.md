@@ -13,12 +13,12 @@ Download the executable (.exe) and follow on screen instructions (enter novel na
 OR
 
 Make sure you have the following dependencies installed:
-1) BeautifulSoup 
-2) ebooklib 
-3) validators 
-4) Requests 
-5) google-auth/api libraries
-To install them: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib beautifulsoup4 EbookLib validators requests
+1) BeautifulSoup (pip install beautifulsoup4)
+2) ebooklib (pip install EbookLib)
+3) validators (pip install validators)
+4) Requests (pip install requests)
+5) google-auth/api libraries (IF you want to use the Kindle Email function)
+To install them all: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib beautifulsoup4 EbookLib validators requests
 
 The compiled EPUB file will be outputted in the same directory.
 
