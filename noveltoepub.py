@@ -159,7 +159,11 @@ def main():
     pack_epub(chapters, author, cover_image, description, tags, title)
     user_input = input("EPUB file downloaded successfully. Would you like to send the file to a Kindle? (Y/N): ")
     if(user_input == "Y" or user_input == "y"):
-        with open("emails.cfg", 'r+') as f:
+        # if not os.path.exists("kindle_email.txt"):
+        #     with open("kindle_email.txt", "w") as f:
+        #         f.write()
+    
+        with open("kindle_email.txt", 'a+') as f:
             kindle_email = f.read()
             if(kindle_email == ""):
                 new_email = input("No kindle email found on record. Please enter one here: ")
