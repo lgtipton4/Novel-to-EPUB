@@ -30,7 +30,7 @@ class Novel2EPUB:
 
         self.entry = ttk.Entry(self.root, width=50)
         self.entry.pack(padx=20, pady=10)
-
+        self.root.iconbitmap('./assets/icon.ico')
         self.checkbox = tk.BooleanVar(value=False) # idk wtf going on with this shit
 
         ttk.Checkbutton(root,  # removed command 
