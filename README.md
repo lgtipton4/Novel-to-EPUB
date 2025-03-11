@@ -8,7 +8,7 @@ RoyalRoad is a platform where novice and experienced authors alike self-publish 
 
 **HOW TO USE:**
 
-Download the executable (.exe) and follow on screen instructions (enter novel name or URL).
+Download the executable (.exe), run the setup.bat file and follow on screen instructions.
 
 OR
 
@@ -20,7 +20,7 @@ Make sure you have the following dependencies installed:
 5) google-auth/api libraries (IF you want to use the Kindle Email function)
 To install them all: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib beautifulsoup4 EbookLib validators requests
 
-The compiled EPUB file will be outputted in the same directory.
+The packed EPUB file will be outputted in the same directory.
 
 **For reading on Windows:**
 
@@ -40,7 +40,12 @@ Download Calibre (https://calibre-ebook.com/download) on Windows and convert the
 
 **For reading on iPhones:**
 
-Copy the EPUB file over to your phone via iTunes or a cloud sharing platform like DropBox, locate the EPUB in the "Files" app, and tap on it to read in the Books app. 
+Add your phone number during the setup configuration and tick the "Send to Phone" box. You will receive a text with the attached ePub file. Due to iMessage's strangeness, to save the ePub file from the message you have to do the following:
+1) Hold down on the file and select Copy
+2) Navigate to the files app. Long press on the white space under the search bar and press paste.
+3) Tap on the file to read in the Books app.
+
+You can also copy the ePub file via iTunes or a cloud sharing platform like DropBox if you prefer.  
 
 As an alternative to the books app, there are many EPUB readers on the AppStore. To send the EPUB file to an alternative app, locate the EPUB in the "Files" app, tap "Share" and choose the app you wish to read on.  
 
